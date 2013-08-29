@@ -1,4 +1,4 @@
-/*Name of MouseLooker changed - Hunter*/
+//Name of MouseLooker changed - Hunter
 
 using UnityEngine;
 using System.Collections;
