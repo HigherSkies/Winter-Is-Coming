@@ -1,0 +1,11 @@
+function Start(){
+ 
+  var working = boolean : true;
+  
+  if(!working){
+    Debug.Log("Get something done.");
+    }
+    
+  else{
+    Debug.Log("Good job!");
+}
