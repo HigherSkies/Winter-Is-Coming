@@ -7,5 +7,5 @@ function Start(){
     }
     
   else{
-    Debug.Log("Good job!")
+    Debug.Log("Good job!");
 }
