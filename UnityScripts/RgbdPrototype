@@ -9,7 +9,7 @@ I made a few statements as seen below that say in laymans terms "only freeze axi
 freeze X and Z if I am not moving. While in theory this should have more or less worked, it has some definite bugs. 
 See if you can come up with a more elegant solution. */
 
-/*Nick: Maybe use rigidbody.freezeRotation = true   and then mouse look will still control absolute rotation??*/
+/*Nick: I DON'T KNOW! */
 
 
 var speed = 200.0;
