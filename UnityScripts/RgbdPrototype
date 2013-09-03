@@ -39,11 +39,9 @@ var scroll = Vector3(0,Input.GetAxis("Mouse ScrollWheel"),0);
 			}
 		}
 
-	else {
-		moving = false;
-		}
 
-	if (Input.GetKey (KeyCode.D)){
+
+	else if (Input.GetKey (KeyCode.D)){
 		moving = true;
 		rigidbody.AddRelativeForce (moveRight * speed);
 			if(scrolling == false) {
@@ -51,22 +49,18 @@ var scroll = Vector3(0,Input.GetAxis("Mouse ScrollWheel"),0);
 			}
 		}
 
-	else {
-		moving = false;
-	}
+	
 
-	if (Input.GetKey (KeyCode.W)){
+	else if (Input.GetKey (KeyCode.W)){
 			moving = true;
 			rigidbody.AddRelativeForce (moveForward * speed);
 				if(scrolling == false) {
 					rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
 		}
 	}
-	else {
-		moving = false;
-	}
 
-	if (Input.GetKey (KeyCode.S)){
+
+	else if (Input.GetKey (KeyCode.S)){
 		moving = true;
 		rigidbody.AddRelativeForce (-moveForward * speed);
 			if(scrolling == false) {
