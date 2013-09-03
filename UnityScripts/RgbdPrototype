@@ -1,6 +1,6 @@
 #pragma strict
 
-/* Here's the problem, in order to not move along the Y axis when moving around the map (the Y axis should only be
+/* Chad: Here's the problem, in order to not move along the Y axis when moving around the map (the Y axis should only be
 accessed by the scrollwheel) the only usable command that I found for a rigidbody was FreezePosition. So, I made it to
 where all the movement IF statements contained the FreezePosition.Y command and it *almost* works. The problem is
 usually you will want to scroll down at the same time you are moving, but when you scroll the script sees that you
@@ -8,6 +8,9 @@ are also moving and FreezePosition.Y is in effect. So you can only scroll down i
 I made a few statements as seen below that say in laymans terms "only freeze axis Y if I am not scrolling" and only 
 freeze X and Z if I am not moving. While in theory this should have more or less worked, it has some definite bugs. 
 See if you can come up with a more elegant solution. */
+
+/*Nick: Maybe use rigidbody.freezeRotation = true   and then mouse look will still control absolute rotation??*/
+
 
 var speed = 200.0;
 var speed2 = 500.0;
